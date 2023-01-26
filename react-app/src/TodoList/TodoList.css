@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+}
+.todoList {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todoList__name {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    text-shadow:
+      0 0 rgb(7, 37, 37),
+      0 0 rgb(7, 37, 37),
+      0 0  rgb(7, 37, 37);
+    color: transparent;
+    transition: all 1s;
+}
+
+.todoList__name:hover {
+    text-shadow:
+    -400px 0 rgb(13, 22, 59),
+    400px 0 rgb(13, 22, 59),
+    0 0 rgb(13, 22, 59);
+}
+
+.todoList__second {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.todoList__input-conteiner {
+    position: relative;
+    display: inline-block;
+}
+
+.todoList__input {
+    border: 1px solid #888888;
+    outline: 0;
+    padding: 15px 20px;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 5px;
+    /*position: relative;*/
+}
+
+.todoList__input:focus {
+    border: 2px solid #2b7522;
+    outline: 0;
+    box-shadow: 0px 0px 0px 1px #888888, 0px 0px 10px #888888;
+}
+
+.todoList__btn {
+    position: absolute;
+    padding: 5px 15px;
+    background-color: rgb(57 111 107);;
+    color: white;
+    font-size: 30px;
+    border: none;
+    left: 285px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.todoList__conteiner {
+    position: relative;
+    display: inline-block;
+}
+.todoList__conteiner::after {
+    content: '';
+    position: absolute;
+    top: 46%;
+    right: 13px;
+    display: block;
+    
+    pointer-events: none;
+
+    /*рисуем треугольник*/
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10.4px 6px 0 6px;
+    border-color: #ffffff transparent transparent transparent;
+
+}
+
+.todoList__btn-select {
+    padding: 2px 50px 2px 8px;
+    height: 60px;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'sans-serif';
+    font-weight: 40px;
+    line-height: 19px;
+    border-radius: 5px;
+    background-color: rgb(57 111 107);;
+    color: white;
+    border: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+.todoList__btn-select:focus{
+    box-shadow: 0px 0px 0px 1px #888888, 0px 0px 10px #888888 ;
+}
+
+.todoList__list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+}
+
+.todoList__list:hover .todoList__basket {
+    display: block;
+
+}
+
+.todoList__list:hover .todoList__added {
+    display: block;
+
+}
+
+
+.todoList__map {
+    text-decoration: none;
+    width: 530px;
+    padding: 10px;
+    display: flex;
+    background-color:rgb(218 231 223 / 46%);
+    margin: 10px;
+    position: relative;
+} 
+
+.tooList__todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.vanta {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100.1%;
+    z-index: -2;
+}
+
+
+.todoList__basket {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 464px;
+    display: none;
+} 
+
+.todoList__added {
+    position: absolute;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 5px;
+    left: 505px;
+    display: none;
+      
+}
+
