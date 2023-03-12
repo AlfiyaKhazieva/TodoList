@@ -4,12 +4,6 @@ import { ReactComponent as Basket } from './basket.svg'
 import { ReactComponent as Added } from './added.svg'
 
 
-const initialState = [
-    { id: Math.random(), text: 'task1', status: 'active' },
-    { id: Math.random(), text: 'task2', status: 'active' },
-    { id: Math.random(), text: 'task3', status: 'active' },
-]
-
 function TodoList () {
 
     // наш текст
