@@ -132,14 +132,11 @@ body {
 
 .todoList__list:hover .todoList__basket {
     display: block;
-
 }
 
 .todoList__list:hover .todoList__added {
     display: block;
-
 }
-
 
 .todoList__map {
     text-decoration: none;
@@ -151,7 +148,7 @@ body {
     position: relative;
 } 
 
-.tooList__todo {
+.todoList__todo {
     display: flex;
     align-items: center;
     justify-content: center;
