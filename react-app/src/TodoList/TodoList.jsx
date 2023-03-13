@@ -56,7 +56,7 @@ function TodoList () {
             <h1 className='todoList__name'>ToDo List</h1>
             <div className='todoList__second'>
                 <div className='todoList__input-conteiner'>
-                    <input className='todoList__input' type="text" maxLength={45} placeholder="Введите текст..." onChange={handleChange} value={value}/>
+                    <input className='todoList__input' type="text" maxLength={36} placeholder="Введите текст..." onChange={handleChange} value={value}/>
                     <button className='todoList__btn' onClick={handleClick} disabled={value === ''}><strong className='send'>+</strong></button>
                 </div>
                 <div className='todoList__conteiner'>
